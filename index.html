@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gulp template</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<main class="main">
+
+    <div class="main__container">
+        <img src="./assets/images/coverart.png" class="container__img">
+    </div>
+
+    <section class="main__section">
+
+        <div class="section__section">
+            <p class="section__title">Godzilla (feat. Juice WRLD)</p>
+            <p class="section__artist">Eminem, Juice WRLD</p>
+            <img class="section__artistIMG" src="./assets/images/artist.png">
+        </div>
+
+        <div class="section__container">
+            <audio class="container__player">
+                <source src="./assets/music/godzilla.mp3" type="audio/mp3">
+            </audio>
+            <div class="container__slider">
+                <div class="slider__progress"></div>
+                <div class="slider__playhead" style="margin-left:0px;"></div>
+            </div>
+            <p class="container__start">0:00</p>
+            <p class="container__end">0:00</p>
+        </div>
+
+        <div class="section__functions">
+            <img class="functions__shuffle" src="./assets/images/shuffle.svg">
+            <img class="functions__back" src="./assets/images/back.svg">
+            <img class="functions__play" src="./assets/images/play.svg">
+            <img class="functions__forward" src="./assets/images/next.svg">
+            <img class="functions__repeat" src="./assets/images/repeat.svg">
+        </div>
+
+    </section>
+
+</main>
+
+<script src="./assets/javascript/player.js"></script>
+</body>
+</html>
