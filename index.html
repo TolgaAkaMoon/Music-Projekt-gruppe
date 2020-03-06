@@ -43,6 +43,39 @@
             <img class="functions__repeat" src="./assets/images/repeat.svg">
         </div>
 
+        <div class="connection__box">
+            <form method="" id="user__data">
+                <p>New User</p>
+                <label for="dName">Name:</label>
+                <input type="text" class="connection__box__name" name="dName">
+            </form>
+            <button>Create User</button>
+        </div>
+        
+
+        <div class="connection__pending">
+            <label for="file">Tryk på den runde knap - Philips Hue Bridge</label>
+            <progress id="file" value="100" max="100"> 100% </progress>
+        </div>
+
+        <div class="menu__edit">
+            <form action="/action_page.php" method="get" id="nameform">
+                <label for="fname">Light Number</label>
+                <input type="text" id="fname" name="fname">
+                <label for="fname">Group Number</label>
+                <input type="text" id="fname" name="fname">
+            </form>
+            <button type="submit" form="nameform" value="Submit">Connect</button>
+        </div>
+        
+        <button class="test__3" style="width: 200px;height: 30px;">
+            On / Off
+        </button>
+        <input class="seekerBright" type="range" value="0" max="65535"/>
+        <div class=""></div>
+        <p>Name: <span class="test__1"></span></p>
+        <p>on: <span class="test__2"></span></p>
+
     </section>
 
 </main>

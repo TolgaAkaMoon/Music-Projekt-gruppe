@@ -61,7 +61,7 @@
             "genre": "rock",
             "file": "../music/intheend.mp3",
             "art": "../images/intheend.jpg",
-            "color": "gray"
+            "color": "gray, orange, yellow"
         }
         
     ]
