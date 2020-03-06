@@ -43,6 +43,8 @@
             <img class="functions__repeat" src="./assets/images/repeat.svg">
         </div>
 
+        <canvas class="random__letter_test"></canvas>
+
         <div class="connection__box">
             <form method="" id="user__data">
                 <p>New User</p>
@@ -71,12 +73,17 @@
         <button class="test__3" style="width: 200px;height: 30px;">
             On / Off
         </button>
-        <input class="seekerBright" type="range" value="0" max="65535"/>
+        <input class="seekerBright" type="range" value="0" max="254"/>
         <div class=""></div>
         <p>Name: <span class="test__1"></span></p>
         <p>on: <span class="test__2"></span></p>
 
     </section>
+
+    <div id="content">
+        <input type="file" id="thefile" accept="audio/*" />
+        <canvas id="canvas"></canvas>
+      </div>
 
 </main>
 
