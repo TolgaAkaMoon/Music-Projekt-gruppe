@@ -1,7 +1,5 @@
 # Music-Projekt-gruppe
 
-
-
 Beskrivelse.
 
 Målbeskrivelse:

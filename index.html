@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gulp template</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<main class="main">
+
+    <div class="main__container">
+        <img src="./assets/images/coverart.png" class="container__img">
+    </div>
+
+    <section class="main__section">
+
+        <div class="section__section">
+            <p class="section__title">Godzilla (feat. Juice WRLD)</p>
+            <p class="section__artist">Eminem, Juice WRLD</p>
+            <img class="section__artistIMG" src="./assets/images/artist.png">
+        </div>
+
+        <div class="section__container">
+            <audio class="container__player">
+                <source src="./assets/music/godzilla.mp3" type="audio/mp3">
+            </audio>
+            <div class="container__slider">
+                <div class="slider__progress"></div>
+                <div class="slider__playhead" style="margin-left:0px;"></div>
+            </div>
+            <p class="container__start">0:00</p>
+            <p class="container__end">0:00</p>
+        </div>
+
+        <div class="section__functions">
+            <img class="functions__shuffle" src="./assets/images/shuffle.svg">
+            <img class="functions__back" src="./assets/images/back.svg">
+            <img class="functions__play" src="./assets/images/play.svg">
+            <img class="functions__forward" src="./assets/images/next.svg">
+            <img class="functions__repeat" src="./assets/images/repeat.svg">
+        </div>
+
+        <canvas class="random__letter_test"></canvas>
+
+        <div class="connection__box">
+            <form method="" id="user__data">
+                <p>New User</p>
+                <label for="dName">Name:</label>
+                <input type="text" class="connection__box__name" name="dName">
+            </form>
+            <button>Create User</button>
+        </div>
+        
+
+        <div class="connection__pending">
+            <label for="file">Tryk på den runde knap - Philips Hue Bridge</label>
+            <progress id="file" value="100" max="100"> 100% </progress>
+        </div>
+
+        <div class="menu__edit">
+            <form action="/action_page.php" method="get" id="nameform">
+                <label for="fname">Light Number</label>
+                <input type="text" id="fname" name="fname">
+                <label for="fname">Group Number</label>
+                <input type="text" id="fname" name="fname">
+            </form>
+            <button type="submit" form="nameform" value="Submit">Connect</button>
+        </div>
+        
+        <button class="test__3" style="width: 200px;height: 30px;">
+            On / Off
+        </button>
+        <input class="seekerBright" type="range" value="0" max="254"/>
+        <div class=""></div>
+        <p>Name: <span class="test__1"></span></p>
+        <p>on: <span class="test__2"></span></p>
+
+    </section>
+
+    <div id="content">
+        <input type="file" id="thefile" accept="audio/*" />
+        <canvas id="canvas"></canvas>
+      </div>
+
+</main>
+
+<script src="./assets/javascript/player.js"></script>
+</body>
+</html>

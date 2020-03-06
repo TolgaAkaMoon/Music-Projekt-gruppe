@@ -1,0 +1,69 @@
+{
+    "songs": [
+        {
+            "id": 1,
+            "name": "Godzilla",
+            "artist": "Eminem",
+            "feat": "Juice WRLD",
+            "album": "Music to be murdered by",
+            "genre": "Rap",
+            "file": "../music/godzilla.mp3",
+            "art": "../images/godzilla.jpg",
+            "color": "Red"
+        },
+        {
+            "id": 2,
+            "name": "Sad",
+            "artist": "XXXTentacion",
+            "album": "?",
+            "genre": "Cloud Rap",
+            "file": "../music/sad.mp3",
+            "art": "../images/sad.jpg",
+            "color": "darkblue"
+        },
+        {
+            "id": 3,
+            "name": "Rodeo",
+            "artist": "Lil Nas X",
+            "feat": "Cardi B",
+            "album": "7",
+            "genre": "Country Rap",
+            "file": "../music/rodeo.mp3",
+            "art": "../images/rodeo.jpg",
+            "color": "green"
+        },
+        {
+            "id": 4,
+            "name": "The Man",
+            "artist": "Taylor Swift",
+            "album": "Lover",
+            "genre": "Pop",
+            "file": "../music/theman.mp3",
+            "art": "../images/theman.jpg",
+            "color": "yellow"
+        },
+        {
+            "id": 5,
+            "name": "Purple Lamborghini",
+            "artist": "Skrillex",
+            "feat": "Rick Ross",
+            "album": "Suicide Squad: The Album",
+            "genre": "EDM",
+            "file": "../music/purplelamborghini.mp3",
+            "art": "../images/purplelamborghini.jpg",
+            "color": "purple"
+        },
+        {
+            "id": 6,
+            "name": "In the End",
+            "artist": "Linkin Park",
+            "album": "Hybrid Theory",
+            "genre": "rock",
+            "file": "../music/intheend.mp3",
+            "art": "../images/intheend.jpg",
+            "color": "gray, orange, yellow"
+        }
+        
+    ]
+}
+
