@@ -92,6 +92,18 @@ document.addEventListener("DOMContentLoaded", function () {
     let barHeight;
     let x = 0;
     
+
+
+
+
+
+
+  fetch(`http://${ip}/api/${user}/lights/${light}/state`, {
+
+  })
+  .then((response) => response.json())
+  .then((data) => {
+
     setInterval(function(){ 
       requestAnimationFrame(setInterval);
       x = 0;
@@ -105,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(state => {
         });
     }, 300);
-  };
 
     setInterval(function () {
       fetch(`http://${ip}/api/${user}/lights/${light}`, {
@@ -118,9 +129,14 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then(res => res.json())
       .then(state => {
-        });
-    }, 300); 
+        })
+      }, 300); 
+    });
+
+  }).catch((error) => {
+    console.log(error)
   });
+
 
 /*      fetch(`/api`, {
       method: "post",
@@ -154,6 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             });
         });
-      })
+      });
+    }
   });
-
