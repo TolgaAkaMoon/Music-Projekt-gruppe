@@ -45,16 +45,14 @@
 
         <canvas class="random__letter_test"></canvas>
 
-        <div class="connection__box">
+        <article class="box__connection__article">
+            <p>New User</p>
             <form method="" id="user__data">
-                <p>New User</p>
-                <label for="dName">Name:</label>
+                <label for="dName">Name:</label><br>
                 <input type="text" class="connection__box__name" name="dName">
             </form>
             <button>Create User</button>
-        </div>
-        
-
+            <br>
         <div class="connection__pending">
             <label for="file">Tryk på den runde knap - Philips Hue Bridge</label>
             <progress id="file" value="100" max="100"> 100% </progress>
@@ -70,22 +68,24 @@
             <button type="submit" form="nameform" value="Submit">Connect</button>
         </div>
         
-        <button class="test__3" style="width: 200px;height: 30px;">
-            On / Off
-        </button>
-        <input class="seekerBright" type="range" value="0" max="254"/>
-        <div class=""></div>
-        <p>Name: <span class="test__1"></span></p>
-        <p>on: <span class="test__2"></span></p>
+        <label>Light Number</label>
+        <input type="text" class="light__value__get" placeholder="1">
 
+        <div class="information__box">
+            <button class="test__3" style="width: 200px;height: 30px;">On / Off</button>
+            <p>Brightness</p>
+            <input class="seekerBright" type="range" value="0" max="254"/><span class="seekerBright__valueText"></span>
+            <p>Light: <span class="test__1"></span></p>
+            <p>group: <span class="test__group"></span></p>
+            <p>on: <span class="test__2"></span></p>
+            <input type="file" id="thefile" accept="audio/*" />
+            <canvas id="canvas"></canvas>
+        </div>
+
+    </article>
     </section>
 
-    <div id="content">
-        <input type="file" id="thefile" accept="audio/*" />
-        <canvas id="canvas"></canvas>
-      </div>
-
-</main>
+</sectio>
 
 <script src="./assets/javascript/player.js"></script>
 </body>
