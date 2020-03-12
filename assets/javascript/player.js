@@ -39,8 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let music = document.querySelector(".container__player");
   let mDuration = music.duration;
 
-  document.querySelector(".container__end").textContent = Math.floor(mDuration / 60) + ":" + 
-  Math.floor(mDuration % 60); setInterval(function () {
+  let durationOnMe = document.querySelector(".container__end").textContent = Math.floor(mDuration / 60) + ":" + 
+  Math.floor(mDuration % 60); console.log(durationOnMe)
+  setInterval(function () {
   let currentTimeNew = Math.floor(music.currentTime % 60);
   let currentTimeMinute = Math.floor(music.currentTime / 60);
   if (currentTimeNew < 10) { document.querySelector(".container__start").textContent = currentTimeMinute + ":" + "0" + currentTimeNew;
@@ -61,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 10);
   music.addEventListener("timeupdate", timeUpdate, false);
   timeline.addEventListener("click", function (event) { moveplayhead(event);
-  music.currentTime = parseInt(duration * clickPercent(event)); }, false); function clickPercent(event) {
+  music.currentTime = duration * clickPercent(event); }, false); function clickPercent(event) {
   return (event.clientX - getPosition(timeline)) / timelineWidth; }
   playhead.addEventListener('mousedown', mouseDown, false);
   window.addEventListener('mouseup', mouseUp, false); let onplayhead = false;
