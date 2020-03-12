@@ -1,5 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+
+    fetch("./assets/json/sange.json")
+      .then(response => response.json())
+      .then(function(data) {
+
+        let songId = 0;
+  
+        data.songs.forEach(function(product){
+
+          console.log(product)
+          if (product.feat) {
+            document.querySelector(".section__title").textContent = product.name + " " + "(feat. " + product.feat + ")"
+          } else {
+            document.querySelector(".section__title").textContent = product.name
+          }
+          document.querySelector(".section__title").textContent = product.name
+          
+        })
+  
+      });
+
   let lightBox = document.querySelector(".light__value__get")
 
   // Hue Information
@@ -32,6 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
   let timeline = document.querySelector(".container__slider"); // timeline
   let progressBar = document.querySelector(".slider__progress");
   let timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+  let volumeBar = document.querySelector(".section__volumeBar")
+  setInterval(function () { music.volume =  volumeBar.value 
+    document.querySelector(".section__volumeProgress").style.width = volumeBar.value * 100 + "px"
+    if (volumeBar.value == 0) { document.querySelector(".section__volumeBar--valueText").setAttribute("src", "assets/images/mute.svg")
+    } else { document.querySelector(".section__volumeBar--valueText").setAttribute("src", "assets/images/volume.svg")}
+  }, 10);
   music.addEventListener("timeupdate", timeUpdate, false);
   timeline.addEventListener("click", function (event) { moveplayhead(event);
   music.currentTime = duration * clickPercent(event); }, false); function clickPercent(event) {
