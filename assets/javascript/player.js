@@ -39,9 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let music = document.querySelector(".container__player");
   let mDuration = music.duration;
 
-  let durationOnMe = document.querySelector(".container__end").textContent = Math.floor(mDuration / 60) + ":" + 
-  Math.floor(mDuration % 60); console.log(durationOnMe)
   setInterval(function () {
+    let durationOnMe = document.querySelector(".container__end")
+    durationOnMe.textContent = Math.floor(mDuration / 60) + ":" + Math.floor(mDuration % 60); 
+    if (durationOnMe.textContent == "NaN:NaN") {
+      durationOnMe.textContent = "0:00";
+    }
+    else {
+    }
   let currentTimeNew = Math.floor(music.currentTime % 60);
   let currentTimeMinute = Math.floor(music.currentTime / 60);
   if (currentTimeNew < 10) { document.querySelector(".container__start").textContent = currentTimeMinute + ":" + "0" + currentTimeNew;
