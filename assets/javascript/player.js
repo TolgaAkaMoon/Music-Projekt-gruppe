@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 10);
   music.addEventListener("timeupdate", timeUpdate, false);
   timeline.addEventListener("click", function (event) { moveplayhead(event);
-  music.currentTime = duration * clickPercent(event); }, false); function clickPercent(event) {
+  music.currentTime = parseInt(duration * clickPercent(event)); }, false); function clickPercent(event) {
   return (event.clientX - getPosition(timeline)) / timelineWidth; }
   playhead.addEventListener('mousedown', mouseDown, false);
   window.addEventListener('mouseup', mouseUp, false); let onplayhead = false;
