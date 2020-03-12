@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let durationOnMe = document.querySelector(".container__end")
     durationOnMe.textContent = Math.floor(mDuration / 60) + ":" + Math.floor(mDuration % 60); 
     if (durationOnMe.textContent == "NaN:NaN") {
-      durationOnMe.textContent = "0:00";
+      durationOnMe.textContent = "3:30";
     }
     else {
     }
